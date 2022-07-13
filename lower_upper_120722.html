@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+  <!-- Viết một chương trình nhập vào một chuỗi và 
+    chuyển các ký tự chữ thường trong chuỗi vừa nhập sang thành dạng chữ hoa.
+    và chuyển chữ hoa thành chữ thường
+  Ví dụ: nếu bạn nhập vào chuỗi ‘The Quick Brown Fox’ kết quả của chương trình là ‘tHE qUICK bROWN fOX’. -->
+
+  <script>
+    
+    let first_str = prompt("Enter your string here: ");
+    let new_str = [];
+
+    for (let i = 0; i <= first_str.length-1; i++) {
+        if (first_str[i] === first_str[i].toUpperCase()) {
+          new_str.push(first_str[i].toLowerCase());
+        } else {
+          new_str.push(first_str[i].toUpperCase());
+        }
+    }
+
+    document.write("original string is: " + first_str + "<br>");
+
+    document.write("new string is: " + new_str.join(''));
+
+  </script>
+
+
+</body>
+
+
+
+</html>
